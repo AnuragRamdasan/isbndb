@@ -24,7 +24,7 @@ class String
     end
   end
 
-  def pluralize
+  def pluralize(count = nil, locale = :en)
     str = self.dup
     if str[-1] == 'y'
       str[0..-2] + 'ies'
